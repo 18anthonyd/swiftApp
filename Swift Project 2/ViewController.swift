@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Swift Project 2
 //
-//  Created by BHSRam6 on 9/6/16.
+//  Created by BHSRam6 on 9/13/16.
 //  Copyright © 2016 BHSRam6. All rights reserved.
 //
 
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         coolLabel.text = "Now Cooler!"
         print("Button Tapped!!")
        tapCount = tapCount + 1
-        if tapCount == 10 {
+        if tapCount > 10 {
             coolLabel.text = "You've tapped ten times."
         }
     }
