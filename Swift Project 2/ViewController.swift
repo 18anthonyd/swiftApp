@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     
     var tapCount = 0
     
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
     @IBAction func button1Tapped(_ sender: AnyObject) {
         coolLabel.text = "Now Cooler!"
         print("Button Tapped!!")
@@ -34,4 +38,3 @@ class ViewController: UIViewController {
     }
 
 }
-

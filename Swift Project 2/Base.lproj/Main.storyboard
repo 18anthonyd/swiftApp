@@ -43,17 +43,39 @@
                                     <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3mo-2g-CDJ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7qU-9Z-GVO">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="83N-AH-Xil"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h2I-I0-2gW">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8hk-Qz-2ZS"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="c6v-I6-kON" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="2ZV-oz-tuJ"/>
+                            <constraint firstItem="7qU-9Z-GVO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="635-VR-xiN"/>
                             <constraint firstItem="jwc-mr-g2y" firstAttribute="top" secondItem="c6v-I6-kON" secondAttribute="bottom" constant="25" id="CTj-aJ-cjM"/>
+                            <constraint firstItem="7qU-9Z-GVO" firstAttribute="top" secondItem="jwc-mr-g2y" secondAttribute="bottom" constant="40" id="a3O-d0-bZE"/>
+                            <constraint firstItem="h2I-I0-2gW" firstAttribute="top" secondItem="7qU-9Z-GVO" secondAttribute="bottom" constant="40" id="hZi-Ix-UXX"/>
                             <constraint firstItem="jwc-mr-g2y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ryc-fg-O4l"/>
+                            <constraint firstItem="h2I-I0-2gW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xPg-nd-BqI"/>
                             <constraint firstItem="c6v-I6-kON" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ziq-np-c5b"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="coolLabel" destination="c6v-I6-kON" id="mbI-vU-9Ha"/>
+                        <outlet property="text1" destination="7qU-9Z-GVO" id="Rkv-ck-ohi"/>
+                        <outlet property="text2" destination="h2I-I0-2gW" id="qy7-19-evu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
