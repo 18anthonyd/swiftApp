@@ -16,10 +16,26 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var text2: UITextField!
     
-    @IBAction func button1Tapped(_ sender: AnyObject) {
-        coolLabel.text! = String(Double(text1.text!)! *
-            Double(text2.text!)!)
+    
+    @IBAction func addButtonTapped(_ sender: AnyObject) {
+        coolLabel.text! = "Answer is ... \(Double(text2.text!)! + Double(text1.text!)!)"
     }
+   
+    
+    @IBAction func subtractButtonTapped(_ sender: AnyObject) {
+        coolLabel.text! = "Answer is ... \(Double(text1.text!)! - Double(text2.text!)!)"
+    }
+    
+    @IBAction func button1Tapped(_ sender: AnyObject) {
+        //:  coolLabel.text! = String(Double(text1.text!)! * Double(text2.text!)!)
+        coolLabel.text! = "Answer is ... \(Double(text2.text!)! * Double(text1.text!)!)"
+    }
+    
+    
+    @IBAction func divideButtonTapped(_ sender: AnyObject) {
+              coolLabel.text! = "Answer is ... \(Double(text1.text!)! / Double(text2.text!)!)"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

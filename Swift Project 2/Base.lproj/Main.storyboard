@@ -38,7 +38,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwc-mr-g2y">
-                                <state key="normal" title="PUSH ME!"/>
+                                <state key="normal" title="Multiply"/>
                                 <connections>
                                     <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3mo-2g-CDJ"/>
                                 </connections>
@@ -59,16 +59,40 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTi-dU-P8B">
+                                <state key="normal" title="Divide"/>
+                                <connections>
+                                    <action selector="divideButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pYj-fy-Vod"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yz0-Fz-CNg">
+                                <state key="normal" title="Subtract"/>
+                                <connections>
+                                    <action selector="subtractButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vcp-dg-weq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAQ-vJ-MLw">
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9A-vm-KLK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="c6v-I6-kON" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="2ZV-oz-tuJ"/>
                             <constraint firstItem="7qU-9Z-GVO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="635-VR-xiN"/>
+                            <constraint firstItem="Yz0-Fz-CNg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-50" id="CBs-sW-tZx"/>
                             <constraint firstItem="jwc-mr-g2y" firstAttribute="top" secondItem="c6v-I6-kON" secondAttribute="bottom" constant="25" id="CTj-aJ-cjM"/>
+                            <constraint firstItem="MTi-dU-P8B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="125" id="EAS-Ra-lrA"/>
+                            <constraint firstItem="Yz0-Fz-CNg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="YBC-ab-vCh"/>
                             <constraint firstItem="7qU-9Z-GVO" firstAttribute="top" secondItem="jwc-mr-g2y" secondAttribute="bottom" constant="40" id="a3O-d0-bZE"/>
+                            <constraint firstItem="KAQ-vJ-MLw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="dgR-kK-mW4"/>
                             <constraint firstItem="h2I-I0-2gW" firstAttribute="top" secondItem="7qU-9Z-GVO" secondAttribute="bottom" constant="40" id="hZi-Ix-UXX"/>
-                            <constraint firstItem="jwc-mr-g2y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ryc-fg-O4l"/>
+                            <constraint firstItem="KAQ-vJ-MLw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-125" id="qYi-f1-8rQ"/>
+                            <constraint firstItem="jwc-mr-g2y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="50" id="ryc-fg-O4l"/>
                             <constraint firstItem="h2I-I0-2gW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xPg-nd-BqI"/>
+                            <constraint firstItem="MTi-dU-P8B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="yrg-Cg-Sve"/>
                             <constraint firstItem="c6v-I6-kON" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ziq-np-c5b"/>
                         </constraints>
                     </view>
